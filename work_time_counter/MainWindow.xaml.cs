@@ -90,5 +90,16 @@ namespace work_time_counter
         {
             tsk1.Content = new TimeSpan(0, 0, ++count);
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            count = 0;
+            tsk1.Content = "00:00:00";
+            if (!start && dis_1 != null)
+            {
+                ell1.Fill = Brushes.Black;
+                dis_1.Stop();
+            }
+        }
     }
 }
