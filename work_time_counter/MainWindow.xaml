@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Canvas HorizontalAlignment="Left" Height="193" Margin="44,49,0,0" VerticalAlignment="Top" Width="349">
+            <Label Content="今天又是元气的一天呢！" Canvas.Left="47" Canvas.Top="48"/>
+            <Label Content="2077/01/12 06:20:00" Canvas.Left="47" Canvas.Top="89" Width="142" Name="clock"/>
+            <!--Label Content="今日も元気な一日だね！" Canvas.Left="47" Canvas.Top="48"/-->
+
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="193" Margin="393,49,0,0" VerticalAlignment="Top" Width="329">
+            <Button Content="Button" Canvas.Left="55" Canvas.Top="31" Width="105" Height="40" Click="Button_Click"/>
+            <Label Content="00:00:00" Canvas.Left="202" Canvas.Top="31" Height="40" Width="87" Name="tsk1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.IsSharedSizeScope="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Ellipse Fill="Black" Height="16" Canvas.Left="289" Stroke="Black" Canvas.Top="43" Width="16" RenderTransformOrigin="0.61,0.813" Name="ell1"/>
+        </Canvas>
     </Grid>
 </Window>
