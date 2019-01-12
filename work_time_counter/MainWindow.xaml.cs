@@ -89,9 +89,13 @@ namespace work_time_counter
         private void TimeCounter(object sender, EventArgs e)
         {
             tsk1.Content = new TimeSpan(0, 0, ++count);
+            if(count % 2 == 0)
+                ell1.Fill = Brushes.Transparent;
+            else
+                ell1.Fill = Brushes.Red;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Reset_Button_Click(object sender, RoutedEventArgs e)
         {
             count = 0;
             tsk1.Content = "00:00:00";
